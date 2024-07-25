@@ -18,13 +18,11 @@ def main():
         solution['a'].append(a)
     
     for i in range(t):
-        print(find_x(solution['s'][i],solution['a'][i],solution['k'][i]))
+        print(solve(solution['s'][i],solution['a'][i],solution['k'][i]))
         
         
-def find_x(s : int, a : list, k : int):
-    for i in range(1,max(a)+1):
-        if s == 11:
-            return add_zeros(to_binary(14),k)
+def solve(s : int, a : list, k : int):
+    for i in range(max(a),-1,-1):
         expression = 0
         for j in range(len(a)):
             expression += abs(i-a[j])
