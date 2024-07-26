@@ -1,15 +1,12 @@
 def solver(n,ar):
-    max_element = max(ar)
-    max_count = ar.count(max_element)
+    ar.sort(reverse = True)
+    distincts = set(ar)
+    result = False
+    for num in distincts:
+        if ar.count(num) % 2 != 0:
+            return "Yes"
+    return "No"
     
-    if max_count % 2 != 0:
-        return "YES"
-    else:
-        if n % 2 == 0:
-            return "NO"
-        else:
-            return "YES"
-
 def main():
     t = int(input())
     result = []

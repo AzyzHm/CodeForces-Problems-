@@ -1,22 +1,25 @@
 def solver(n, s, t):
-    if s == t:
-        return "Yes"
-    elif  n == 1:
-        return "No"
+    tester = False
+    for i in range(n):
+        if s[i] == '1':
+            tester = True
+        elif t[i] == '1' and not tester:
+            return "No"
+    return "Yes"
 
 
 
 def main():
     q = int(input())
-    elements = []
-    for i in range(q):
+    results= []
+    for _ in range(q):
         n = int(input())
         s = input()
         t = input()
-        elements.append((n, s, t))
+        results.append(solver(n, s, t))
     
-    for element in elements:
-        print(solver(*element))
+    for result in results:
+        print(result)
 
 if __name__ == "__main__":
     main()
