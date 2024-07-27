@@ -1,7 +1,7 @@
-def solve():
+def solve(n,x):
     num = 0
     for i in range(1, n+1):
-        for
+        pass
 def main():
     t = int(input())
     results = []
