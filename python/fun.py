@@ -1,3 +1,4 @@
+# solution incomplete
 def solve(n,x):
     num = 0
     for i in range(1, n+1):

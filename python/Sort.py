@@ -1,3 +1,4 @@
+# solution incomplete
 def solver(a,b,s,e):
     if s == e:
         if a[s] == b[e]:

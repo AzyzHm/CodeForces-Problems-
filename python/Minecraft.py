@@ -1,5 +1,4 @@
-# Not Completed , this is a simple try!!
-        
+# solution incomplete 
 def solve(n :int,k:int,s : int, a : list)->str:
     for i in range(max(a)+1,min(a)-1,-1):
         expression = 0
